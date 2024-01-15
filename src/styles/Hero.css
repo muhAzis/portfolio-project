@@ -1,0 +1,37 @@
+#Hero {
+  display: grid;
+  width: 100dvw;
+  height: 100dvh;
+  padding: 5rem;
+  place-items: center;
+
+  .hero-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--clr-white);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow-lite1);
+    overflow: hidden;
+
+    .col1 {
+      height: 100%;
+      width: 30%;
+      background: var(--clr-light) center url('/profile.png') no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      box-shadow: var(--box-shadow-lite1);
+      filter: grayscale(100%);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+
+body {
+  height: 2000px;
+}
