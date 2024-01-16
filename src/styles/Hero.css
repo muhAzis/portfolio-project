@@ -10,28 +10,93 @@
     width: 100%;
     height: 100%;
     padding: 40px;
+    gap: 40px;
     background-color: var(--clr-white);
     border-radius: 50px;
     box-shadow: var(--box-shadow-lite1);
     overflow: hidden;
 
     .col1 {
+      position: relative;
       height: 100%;
       width: 30%;
-      background: var(--clr-light) center url('/profile.png') no-repeat;
-      background-size: cover;
+      background-color: var(--clr-light);
       border-radius: 20px;
       box-shadow: var(--box-shadow-lite1);
       filter: grayscale(100%);
       transition: all 0.2s ease-in-out;
+      overflow: hidden;
 
       &:hover {
         filter: grayscale(0%);
       }
+
+      #ProfilePict {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        object-fit: cover;
+        background-color: transparent;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+
+      .profile-pict-running-text {
+        color: var(--clr-white);
+        font-size: 30rem;
+        font-weight: 700;
+        line-height: 0.9;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .col2 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .hero-name-texts {
+        display: flex;
+        flex-direction: column;
+
+        .hero-name-text1 {
+          font-family: var(--font-serif);
+          font-size: 3rem;
+          font-weight: 500;
+          line-height: 0.9;
+        }
+
+        .hero-name-text2 {
+          width: fit-content;
+          font-size: 7rem;
+          font-weight: 700;
+          line-height: 0.9;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: var(--clr-army);
+          }
+        }
+      }
+
+      .hero-about-texts {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: flex-end;
+
+        .hero-about-text1 {
+          color: var(--clr-army);
+          /* font-family: var(--font-serif); */
+        }
+
+        .hero-about-text2 {
+          max-width: 700px;
+          font-family: var(--font-serif);
+          text-align: right;
+        }
+      }
     }
   }
-}
-
-body {
-  height: 2000px;
 }
