@@ -49,7 +49,7 @@
         }
       }
 
-      .special-item {
+      /* .special-item {
         padding: 10px 20px;
         color: var(--clr-text-light);
         background-color: var(--clr-army);
@@ -62,7 +62,7 @@
       .special-item:hover {
         transform: scale(0.95);
         box-shadow: var(--box-shadow2);
-      }
+      } */
     }
   }
 }
