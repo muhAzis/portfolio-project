@@ -1,0 +1,18 @@
+button.call-to-action-btn {
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  gap: 10px;
+  font-family: var(--font-sans);
+  box-shadow: var(--box-shadow1);
+  border: none;
+  border-radius: 30px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.98);
+    box-shadow: var(--box-shadow2);
+  }
+}
