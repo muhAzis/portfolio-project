@@ -12,7 +12,7 @@ const App: React.FC = () => {
       {isWelcome && <WelcomeScreen setWelcome={setIsWelcome} />}
       <Navbar />
 
-      <Hero />
+      <Hero welcome={isWelcome} />
     </div>
   );
 };
