@@ -36,6 +36,7 @@ const Hero: React.FC<Props> = ({ welcome }) => {
   // }, [welcome]);
 
   useEffect(() => {
+    welcome;
     const onScroll = (e: WheelEvent) => {
       if (card1Ref.current && card2Ref.current && card3Ref.current) {
         setActiveDot((prev) => {
