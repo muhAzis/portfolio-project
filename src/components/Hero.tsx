@@ -3,11 +3,9 @@ import '../styles/Hero.css';
 import Marquee from 'react-fast-marquee';
 import ButtonCTA from './ButtonCTA';
 
-interface Props {
-  welcome: boolean;
-}
+interface Props {}
 
-const Hero: React.FC<Props> = ({ welcome }) => {
+const Hero: React.FC<Props> = () => {
   const cardParentRef = useRef<HTMLDivElement>(null);
   const card1Ref = useRef<HTMLDivElement>(null);
   const card2Ref = useRef<HTMLDivElement>(null);
@@ -36,7 +34,6 @@ const Hero: React.FC<Props> = ({ welcome }) => {
   // }, [welcome]);
 
   useEffect(() => {
-    welcome;
     const onScroll = (e: WheelEvent) => {
       if (card1Ref.current && card2Ref.current && card3Ref.current) {
         setActiveDot((prev) => {
