@@ -1,0 +1,20 @@
+#Services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  line-height: 0.9;
+
+  .services-title {
+    text-align: end;
+    align-self: flex-end;
+
+    > * {
+      transition: all 0.1s ease-in-out;
+    }
+
+    > :hover {
+      color: var(--clr-text-army);
+    }
+  }
+}
