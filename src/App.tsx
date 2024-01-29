@@ -3,6 +3,7 @@ import './styles/App.css';
 import WelcomeScreen from './components/WelcomeScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Services from './components/Services';
 
 const App: React.FC = () => {
   const [isWelcome, setIsWelcome] = useState<boolean>(true);
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Navbar />
 
       <Hero welcome={isWelcome} />
+      <Services />
     </div>
   );
 };
